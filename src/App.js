@@ -3,6 +3,7 @@ import Graveyard from './components/Graveyard';
 import Hand from './components/Hand';
 import Deck from './components/Deck';
 import EmperorThaurissan from './components/EmperorThaurissan';
+import MaxDamage from './components/MaxDamage';
 
 class App extends Component {
   render() {
@@ -14,10 +15,13 @@ class App extends Component {
         </div>
 
         <div className="container">
-          <Deck {...this.props} />
-          <Hand {...this.props} />
-          <Graveyard {...this.props} />
+          <div className="areas">
+            <Deck {...this.props} />
+            <Hand {...this.props} />
+            <Graveyard {...this.props} />
+          </div>
           <EmperorThaurissan {...this.props} />
+          <MaxDamage {...this.props} />
         </div>
 
       </div>

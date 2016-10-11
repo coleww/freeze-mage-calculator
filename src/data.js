@@ -34,6 +34,7 @@ const cardData = [
     damage: 0,
     imgSrc: 'iceLance',
     spellPower: 0,
+    freeze: true,
     frozenPower: 4
   },
   {
