@@ -1,9 +1,10 @@
 import { createStore } from 'redux';
 import rootReducer from './reducers';
+import cardData from './data';
 
 const defaultState = {
-  hand: ['foo'],
-  deck: [],
+  hand: [],
+  deck: cardData,
   graveyard: []
 };
 

@@ -10,6 +10,7 @@ Built with react and redux.
 - render out UI (all cards in deck)
 - click to move cards to next "state"
 - handle playing torches
+- handle adding a thaurissan tick to yr hand
 - calculate max damage by mana
 - (maybe) calculate % of drawing a card
 
