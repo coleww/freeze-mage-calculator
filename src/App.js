@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Graveyard from './components/Graveyard';
 import Hand from './components/Hand';
 import Deck from './components/Deck';
+import EmperorThaurissan from './components/EmperorThaurissan';
 
 class App extends Component {
   render() {
@@ -16,6 +17,7 @@ class App extends Component {
           <Deck {...this.props} />
           <Hand {...this.props} />
           <Graveyard {...this.props} />
+          <EmperorThaurissan {...this.props} />
         </div>
 
       </div>

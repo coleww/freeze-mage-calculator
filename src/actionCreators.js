@@ -13,3 +13,9 @@ export function playCard (card, i) {
     i: i
   };
 }
+
+export function thaurissanTick () {
+  return {
+    type: 'THAURISSAN'
+  };
+}

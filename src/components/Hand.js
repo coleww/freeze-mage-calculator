@@ -8,7 +8,7 @@ const Hand = React.createClass({
         <h3>Hand</h3>
         <div className="cards">
           {this.props.hand.map((card, i) =>
-            <Card {...this.props} key={i} i={i} card={card} onClick={this.props.playCard.bind(null, card, i)} />)}
+            <Card {...this.props} key={i} i={i} card={card} onClick={this.props.playCard.bind(null, i)} />)}
         </div>
       </div>
     );

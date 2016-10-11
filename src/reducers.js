@@ -22,6 +22,17 @@ const rootReducer = function (state = {}, action) {
         graveyard: graveyard,
         hand: hand
       };
+    case 'THAURISSAN':
+      return {
+        ...state,
+        hand: hand.map((card) => {
+          let newCost = card.cost - 1;
+          if (newCost < 0) {
+            newCost = 0
+          }
+          return {...card, cost: newCost}
+        })
+      };
     default:
       return state;
   }
