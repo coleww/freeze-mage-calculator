@@ -6,8 +6,6 @@ Because I got tired of counting my spell damage every turn.
 Built with react and redux.
 
 ## WIP/ TODO:
-- add relevant card data, grab imgs?
-- render out UI (all cards in deck)
 - click to move cards to next "state"
 - handle playing torches
 - handle adding a thaurissan tick to yr hand
