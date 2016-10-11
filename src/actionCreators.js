@@ -1,15 +1,13 @@
-export function drawCard (card, i) {
+export function drawCard (i) {
   return {
     type: 'DRAW',
-    card: card,
     i: i
   };
 }
 
-export function playCard (card, i) {
+export function playCard (i) {
   return {
     type: 'PLAY',
-    card: card,
     i: i
   };
 }

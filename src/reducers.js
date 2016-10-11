@@ -6,8 +6,10 @@ const rootReducer = function (state = {}, action) {
 
   switch (action.type) {
     case 'DRAW':
+      let cardDrawn = deck[action.i]
       // mutating the cloned arrays seems...very un-react-like?
-      hand.push(action.card);
+      console.log(cardDrawn)
+      hand.push(cardDrawn);
       deck.splice(action.i, 1);
       return {
         ...state,
@@ -15,10 +17,14 @@ const rootReducer = function (state = {}, action) {
         hand: hand
       };
     case 'PLAY':
-      graveyard.push(action.card);
+      let cardPlayed = hand[action.i]
+      graveyard.push(cardPlayed);
       hand.splice(action.i, 1);
+      if (cardPlayed.createOnPlay) {
+        deck.push(cardPlayed.createOnPlay)
+      }
       return {
-        ...state,
+        deck: deck,
         graveyard: graveyard,
         hand: hand
       };

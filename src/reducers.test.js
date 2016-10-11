@@ -8,7 +8,7 @@ const initialState = {
 };
 
 it('handles drawing a card and moving it to the hand', () => {
-  const output = rootReducer(initialState, {type: 'DRAW', i: 0, card: {name: 'foo'}})
+  const output = rootReducer(initialState, {type: 'DRAW', i: 0})
   expect(output).toEqual({
     deck: [{name: 'bar'}],
     hand: [{name: 'baz'}, {name: 'foo'}],
@@ -17,11 +17,25 @@ it('handles drawing a card and moving it to the hand', () => {
 });
 
 it('handles playing a card and moving it to the graveyard', () => {
-  const output = rootReducer(initialState, {type: 'PLAY', i: 0, card: {name: 'baz'}})
+  const output = rootReducer(initialState, {type: 'PLAY', i: 0})
   expect(output).toEqual({
     deck: [{name: 'foo'}, {name: 'bar'}],
     hand: [],
     graveyard: [{name: 'zed'}, {name: 'baz'}]
+  })
+});
+
+it('handles playing a card with a createOnPlay attr', () => {
+  const createOnPlayState = {
+    deck: [],
+    hand: [{name: 'bob', createOnPlay: {name: 'alice'}}],
+    graveyard: []
+  }
+  const output = rootReducer(createOnPlayState, {type: 'PLAY', i: 0})
+  expect(output).toEqual({
+    deck: [{name: 'alice'}],
+    hand: [],
+    graveyard: [{name: 'bob', createOnPlay: {name: 'alice'}}]
   })
 });
 

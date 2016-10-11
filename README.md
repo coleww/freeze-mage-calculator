@@ -5,8 +5,7 @@ A handy dandy UI for tracking yr potential burst damage in hearthstone.
 Because I got tired of counting my spell damage every turn. 
 Built with react and redux.
 
-## WIP/ TODO:
-- handle playing torches
+## WIP/ TODO: 
 - calculate max damage by mana (this gonna be weird)
 - probably use flexbox or CSS grids to handle final styling
 - DRY up "area" components by extending a base component instead
