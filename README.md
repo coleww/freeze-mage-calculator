@@ -9,7 +9,9 @@ Built with react and redux.
 - click to move cards to next "state"
 - handle playing torches
 - handle adding a thaurissan tick to yr hand
-- calculate max damage by mana
+- calculate max damage by mana (this gonna be weird)
+- probably use flexbox or CSS grids to handle final styling
+- DRY up "area" components by extending a base component instead
 - (maybe) calculate % of drawing a card
 
 ### FAQ:

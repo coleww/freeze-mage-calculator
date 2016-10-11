@@ -5,8 +5,11 @@ const Hand = React.createClass({
   render() {
     return (
       <div className="area hand">
-        {this.props.hand.map((card, i) =>
-          <Card {...this.props} key={i} i={i} card={card} />)}
+        <h3>Hand</h3>
+        <div className="cards">
+          {this.props.hand.map((card, i) =>
+            <Card {...this.props} key={i} i={i} card={card} />)}
+        </div>
       </div>
     );
   }

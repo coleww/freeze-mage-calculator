@@ -4,6 +4,26 @@ body {
   font-family: sans-serif;
 }
 
+.App {
+  margin: 15px;
+}
+
+.header {
+  text-align: center;
+}
+
 .cardImg {
   width: 100px;
+}
+
+.area {
+  border: 1px solid black;
+  width: 33%;
+  float: left;
+}
+
+.card {
+  border: 1px solid black;
+  float: left;
+  width: 32%;
 }

@@ -5,8 +5,11 @@ const Graveyard = React.createClass({
   render() {
     return (
       <div className="area graveyard">
-        {this.props.graveyard.map((card, i) =>
-          <Card {...this.props} key={i} i={i} card={card} />)}
+        <h3>Graveyard</h3>
+        <div className="cards">
+          {this.props.graveyard.map((card, i) =>
+            <Card {...this.props} key={i} i={i} card={card} />)}
+        </div>
       </div>
     );
   }

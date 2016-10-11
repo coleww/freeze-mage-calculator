@@ -13,11 +13,8 @@ class App extends Component {
         </div>
 
         <div className="container">
-
-          <Hand {...this.props} />
-
           <Deck {...this.props} />
-
+          <Hand {...this.props} />
           <Graveyard {...this.props} />
         </div>
 
