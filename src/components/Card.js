@@ -5,7 +5,11 @@ const Card = React.createClass({
     return (
       <div className="card">
         Cost: {this.props.card.cost}
-        <img className="cardImg" src={`${process.env.PUBLIC_URL}/imgs/${this.props.card.imgSrc}.png`} alt={this.props.card.name}/>
+        <img
+          className="cardImg"
+          src={`${process.env.PUBLIC_URL}/imgs/${this.props.card.imgSrc}.png`}
+          alt={this.props.card.name}
+          onClick={this.props.onClick} />
       </div>
     );
   }

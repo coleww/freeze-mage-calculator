@@ -8,7 +8,7 @@ const Deck = React.createClass({
         <h3>Deck</h3>
         <div className="cards">
           {this.props.deck.map((card, i) =>
-            <Card {...this.props} key={i} i={i} card={card} />)}
+            <Card {...this.props} key={i} i={i} card={card} onClick={this.props.drawCard.bind(null, card, i)}/>)}
         </div>
       </div>
     );
