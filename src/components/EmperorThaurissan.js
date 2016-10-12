@@ -5,7 +5,7 @@ const EmperorThaurissan = React.createClass({
     return (
       <div className="thaurissan">
         <img
-          className="cardImg"
+          className="thaurissanImg"
           src={`${process.env.PUBLIC_URL}/imgs/emperorThaurissan.png`}
           alt="Emperor Thaurissan"
           onClick={this.props.thaurissanTick} />
