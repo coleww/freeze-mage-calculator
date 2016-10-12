@@ -2,41 +2,50 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 .App {
   margin: 15px;
 }
 
-.header {
-  text-align: center;
-}
 
-.cardImg {
-  width: 100px;
-  height: 65px;
-  cursor: pointer;
-}
-
-.thaurissanImg {
-  width: 100px;
-  cursor: pointer;
+.areas {
+  display: flex;
+  height: 75vh;
 }
 
 .area {
   border: 1px solid black;
   width: 33%;
-  float: left;
-  height: 550px;
+}
+
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .card {
+  width: 25%;
   border: 1px solid black;
-  float: left;
-  width: 24%;
+  position: relative;
 }
 
-.maxDamageCombo {
-  border: 1px solic black;
-  width: 75%;
+.cardCost {
+  position: absolute;
+  font-size: 1.5vw;
+  padding: 0.25vw;
+  color: white;
+  background-color: black;
+  border-radius: 100%;
+}
+
+.cardImg {
+  width: 100%;
 }
