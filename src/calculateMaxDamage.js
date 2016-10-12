@@ -14,17 +14,18 @@ function calculateDamage (cards) {
   })
 
   return cards.reduce((total, card) => {
+    let cardDamage = card.damage
     if (card.name === 'Ice Lance') {
       // if we have a frostbolt, or have already played an ice lance, then it is active
       if (frozen) {
-        card.damage = 4
+        cardDamage = 4
       } else {
         // if we have 2 ice lances in a combo but no frostbolt, this will activate the second one
         frozen = true
       }
     }
     // if the card deals damage, add the spell power damage. otherwise: nada.
-    let damage = card.damage ? (card.damage + spellDamage) : 0
+    let damage = cardDamage ? (cardDamage + spellDamage) : 0
     return total + damage
   }, 0)
 }

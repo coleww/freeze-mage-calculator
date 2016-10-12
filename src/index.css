@@ -28,3 +28,8 @@ body {
   float: left;
   width: 24%;
 }
+
+.maxDamageCombo {
+  border: 1px solic black;
+  width: 75%;
+}
