@@ -5,6 +5,8 @@ A handy dandy UI for tracking yr potential burst damage in hearthstone.
 Because I got tired of counting my spell damage every turn. 
 Built with react and redux.
 
+![demo.gif](./demo.gif)
+
 ### HOW 2 USE
 
 - when you draw a card, click on it to move it from the deck to your hand
