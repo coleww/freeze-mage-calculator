@@ -4,75 +4,60 @@ const cardData = [
     cost: 3,
     damage: 3,
     imgSrc: 'forgottenTorch',
-    spellPower: 0,
     createOnPlay: {
       name: 'Roaring Torch',
       cost: 3,
       damage: 6,
-      imgSrc: 'roaringTorch',
-      spellPower: 0
+      imgSrc: 'roaringTorch'
     }
   },
   {
     name: 'Fireball',
     cost: 4,
     damage: 6,
-    imgSrc: 'fireball',
-    spellPower: 0
+    imgSrc: 'fireball'
   },
   {
     name: 'Frostbolt',
     cost: 2,
     damage: 3,
-    imgSrc: 'frostbolt',
-    spellPower: 0,
-    freeze: true
+    imgSrc: 'frostbolt'
   },
   {
     name: 'Ice Lance',
     cost: 1,
     damage: 0,
-    imgSrc: 'iceLance',
-    spellPower: 0,
-    freeze: true,
-    frozenPower: 4
+    imgSrc: 'iceLance'
   },
   {
     name: 'Forgotten Torch',
     cost: 3,
     damage: 3,
     imgSrc: 'forgottenTorch',
-    spellPower: 0,
     createOnPlay: {
       name: 'Roaring Torch',
       cost: 3,
       damage: 6,
-      imgSrc: 'roaringTorch',
-      spellPower: 0
+      imgSrc: 'roaringTorch'
     }
   },
   {
     name: 'Fireball',
     cost: 4,
     damage: 6,
-    imgSrc: 'fireball',
-    spellPower: 0
+    imgSrc: 'fireball'
   },
   {
     name: 'Frostbolt',
     cost: 2,
     damage: 3,
-    imgSrc: 'frostbolt',
-    spellPower: 0,
-    freeze: true
+    imgSrc: 'frostbolt'
   },
   {
     name: 'Ice Lance',
     cost: 1,
     damage: 0,
-    imgSrc: 'iceLance',
-    spellPower: 0,
-    frozenPower: 4
+    imgSrc: 'iceLance'
   },
   {
     name: 'Evolved Kobold',
