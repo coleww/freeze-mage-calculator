@@ -32,19 +32,31 @@ function calculateDamage (cards) {
 
 function selectAffordableCombos (mana, combos) {
   return combos.filter((combo) => {
-    let totalCost = combo.reduce((total, card) => {
-      return total + card.cost;
-    }, 0)
+    let totalCost = calculateTotalCost(combo)
     return totalCost <= mana;
   })
+}
+
+function calculateTotalCost (cards) {
+  return cards.reduce((total, card) => {
+    return total + card.cost;
+  }, 0)
 }
 
 function calculateMaxDamage (mana, cards) {
   let maximum = {damage: 0, cards: []}
 
-  let allCombos = combinations(cards)
-  let affordableCombos = selectAffordableCombos(mana, allCombos)
-  affordableCombos.forEach((combo) => {
+  let allCombos = combinations(cards);
+  let clonedCombos = JSON.parse(JSON.stringify(allCombos));
+  let affordableCombos = selectAffordableCombos(mana, clonedCombos);
+  let combosWithHeroPower = affordableCombos.map((combo) => {
+    let cost = calculateTotalCost(combo);
+    if (mana - cost >= 2) {
+      combo.push({name: 'Fireblast', cost: 2, damage: 1, imgSrc: 'fireblast'})
+    }
+    return combo;
+  })
+  combosWithHeroPower.forEach((combo) => {
     let damage = calculateDamage(combo)
     if (damage > maximum.damage) {
       maximum.damage = damage

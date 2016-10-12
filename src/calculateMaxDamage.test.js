@@ -65,3 +65,13 @@ it('handles double ice lance', () => {
     {name: 'Ice Lance', cost: 1, damage: 0}
   ]});
 });
+
+it('knows about yr hero power', () => {
+  const output = calculateMaxDamage(4, [
+    {name: 'Frostbolt', cost: 2, damage: 3}
+  ]);
+  expect(output).toEqual({damage: 4, cards: [
+    {name: 'Frostbolt', cost: 2, damage: 3},
+    {name: 'Fireblast', cost: 2, damage: 1, imgSrc: 'fireblast'}
+  ]});
+});
