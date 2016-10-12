@@ -27,6 +27,15 @@ const rootReducer = function (state = {}, action) {
         graveyard: graveyard,
         hand: hand
       };
+    case 'RECYCLE':
+      let cardRecycled = graveyard[action.i]
+      deck.push(cardRecycled);
+      graveyard.splice(action.i, 1);
+      return {
+        deck: deck,
+        graveyard: graveyard,
+        hand: hand
+      };
     case 'THAURISSAN':
       return {
         ...state,

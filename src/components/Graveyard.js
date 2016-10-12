@@ -8,7 +8,7 @@ const Graveyard = React.createClass({
         <h3>Graveyard</h3>
         <div className="cards">
           {this.props.graveyard.map((card, i) =>
-            <Card {...this.props} key={i} i={i} card={card} />)}
+            <Card {...this.props} key={i} i={i} card={card} onClick={this.props.recycleCard.bind(null, i)}/>)}
         </div>
       </div>
     );

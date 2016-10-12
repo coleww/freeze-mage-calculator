@@ -12,6 +12,13 @@ export function playCard (i) {
   };
 }
 
+export function recycleCard (i) {
+  return {
+    type: 'RECYCLE',
+    i: i
+  };
+}
+
 export function thaurissanTick () {
   return {
     type: 'THAURISSAN'
