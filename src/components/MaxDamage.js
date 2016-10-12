@@ -46,7 +46,9 @@ const MaxDamage = React.createClass({
           </div>
         </div>
         <div className="area credits">
-          wow filler cool nice!
+          <div className="areaHeader">
+            Built by <a href="http://cole.money">Cole Willsea</a> with React, Redux, and Flexbox. <a href="https://github.com/coleww/freeze-mage-calculator">Source code</a>
+          </div>
         </div>
       </div>
     );
