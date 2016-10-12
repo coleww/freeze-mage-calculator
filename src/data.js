@@ -12,24 +12,6 @@ const cardData = [
     }
   },
   {
-    name: 'Fireball',
-    cost: 4,
-    damage: 6,
-    imgSrc: 'fireball'
-  },
-  {
-    name: 'Frostbolt',
-    cost: 2,
-    damage: 3,
-    imgSrc: 'frostbolt'
-  },
-  {
-    name: 'Ice Lance',
-    cost: 1,
-    damage: 0,
-    imgSrc: 'iceLance'
-  },
-  {
     name: 'Forgotten Torch',
     cost: 3,
     damage: 3,
@@ -48,10 +30,28 @@ const cardData = [
     imgSrc: 'fireball'
   },
   {
+    name: 'Fireball',
+    cost: 4,
+    damage: 6,
+    imgSrc: 'fireball'
+  },
+  {
     name: 'Frostbolt',
     cost: 2,
     damage: 3,
     imgSrc: 'frostbolt'
+  },
+  {
+    name: 'Frostbolt',
+    cost: 2,
+    damage: 3,
+    imgSrc: 'frostbolt'
+  },
+  {
+    name: 'Ice Lance',
+    cost: 1,
+    damage: 0,
+    imgSrc: 'iceLance'
   },
   {
     name: 'Ice Lance',

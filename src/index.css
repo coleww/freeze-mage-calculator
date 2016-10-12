@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: Verdana, Geneva, sans-serif;
   box-sizing: border-box;
 }
 
@@ -10,36 +10,47 @@ body {
 }
 
 .App {
-  margin: 15px;
+  margin: 5vw 5vh;
 }
 
 
 .areas {
   display: flex;
-  height: 75vh;
+  height: 40vh;
 }
 
 .area {
   border: 1px solid black;
   width: 33%;
+  background-image: url("../public/imgs/texture.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
+.areaHeader {
+  height: 10%;
+  font-size: 2.5vh;
+  text-align: center;
+}
 
 .cards {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  align-content: flex-start;
+  height: 90%;
 }
 
 .card {
   width: 25%;
-  border: 1px solid black;
+  height: 33.3333333%;
   position: relative;
 }
 
 .cardCost {
   position: absolute;
-  font-size: 1.5vw;
+  font-size: 2vw;
+  margin: 0.125vw;
   padding: 0.25vw;
   color: white;
   background-color: black;
@@ -48,4 +59,31 @@ body {
 
 .cardImg {
   width: 100%;
+  height: 100%;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.maxDamageCombo {
+  border: 1px solid black;
+}
+
+.controls {
+  border: 1px solid black;
+}
+
+.thaurissan {
+  display: inline-block;
+  height: 25%;
+  margin: 5px;
+}
+.thaurissanImg {
+  height: 100%;
+  cursor: pointer;
+  border-radius: 50px;
+  border: 1px solid black;
+}
+
+.manaCrystal {
+  width: 10%;
 }

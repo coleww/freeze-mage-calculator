@@ -5,7 +5,9 @@ const Hand = React.createClass({
   render() {
     return (
       <div className="area hand">
-        <h3>Hand</h3>
+        <div className="areaHeader">
+          Hand
+        </div>
         <div className="cards">
           {this.props.hand.map((card, i) =>
             <Card {...this.props} key={i} i={i} card={card} onClick={this.props.playCard.bind(null, i)} />)}
