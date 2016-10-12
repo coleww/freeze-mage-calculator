@@ -28,7 +28,7 @@ const MaxDamage = React.createClass({
         <div className="area controls">
           <EmperorThaurissan {...this.props} />
           <div className="manaCrystalControls">
-            Available Mana: {this.state.mana}
+            Available Mana: {this.state.mana}&nbsp;&nbsp;
             <button className="decrementMana" onClick={this.decrementMana}>-</button>
             <button className="incrementMana" onClick={this.incrementMana}>+</button>
             <div className="manaCrystals">

@@ -20,7 +20,7 @@ body {
 }
 
 .area {
-  border: 1px solid black;
+  border: 10px solid white;
   width: 33%;
   background-image: url("../public/imgs/texture.png");
   background-size: 100% 100%;
@@ -38,6 +38,7 @@ body {
   flex-wrap: wrap;
   flex-direction: row;
   align-content: flex-start;
+  border: 10px solid transparent;
   height: 90%;
 }
 
@@ -65,17 +66,18 @@ body {
 }
 
 .maxDamageCombo {
-  border: 1px solid black;
+  border: 10px solid white;
 }
 
 .controls {
-  border: 1px solid black;
+  border: 10px solid white;
 }
 
 .thaurissan {
   display: inline-block;
   height: 25%;
   margin: 5px;
+  border: 10px solid transparent;
 }
 .thaurissanImg {
   height: 100%;
@@ -84,6 +86,9 @@ body {
   border: 1px solid black;
 }
 
+.manaCrystalControls {
+  border: 15px solid transparent;
+}
 .manaCrystal {
   width: 10%;
 }
