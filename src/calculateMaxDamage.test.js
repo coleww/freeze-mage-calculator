@@ -66,6 +66,22 @@ it('handles double ice lance', () => {
   ]});
 });
 
+it('handles spellpower w/ hero power', () => {
+  const output = calculateMaxDamage(10, [
+    {name: 'Frostbolt', cost: 2, damage: 3},
+    {name: 'Ice Lance', cost: 1, damage: 0},
+    {name: 'Ice Lance', cost: 1, damage: 0},
+    {name: 'Evolved Kobold', cost: 4, spellPower: 2, damage: 0}
+  ]);
+  expect(output).toEqual({damage: 18, cards: [
+    {name: 'Frostbolt', cost: 2, damage: 3},
+    {name: 'Ice Lance', cost: 1, damage: 0},
+    {name: 'Ice Lance', cost: 1, damage: 0},
+    {name: 'Evolved Kobold', cost: 4, spellPower: 2, damage: 0},
+    {name: 'Fireblast', cost: 2, damage: 1, imgSrc: 'fireblast'}
+  ]});
+});
+
 it('knows about yr hero power', () => {
   const output = calculateMaxDamage(4, [
     {name: 'Frostbolt', cost: 2, damage: 3}

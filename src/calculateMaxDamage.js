@@ -25,7 +25,10 @@ function calculateDamage (cards) {
       }
     }
     // if the card deals damage, add the spell power damage. otherwise: nada.
-    let damage = cardDamage ? (cardDamage + spellDamage) : 0
+    let damage = cardDamage
+    if (damage && card.name !== 'Fireblast') {
+      damage = cardDamage + spellDamage
+    }
     return total + damage
   }, 0)
 }
